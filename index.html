@@ -3,14 +3,15 @@
   <head>
     <style>
       body {
-        color: white;
+        color: black;
       }
     </style>
   </head>
   <body>
-      <script id="reaction-template" type="text/x-handlebars-template">
+    <div id="theAreaOfBusiness"></div>
+
+      <script id="comment-template" type="text/x-handlebars-template">
         <div class="comment">
-            <img src={{profile-picture}}/>
             <div>
                 <p>{{name}}</p>
                 <p>{{comment}}</p>
@@ -18,7 +19,7 @@
          </div>
       </script>
 
-      <script id="comment-template" type="text/x-handlebars-template">
+      <script id="reaction-template" type="text/x-handlebars-template">
         <div class="reaction-total">
             <img {{primary-reaction}}/>
             <img {{secondary-reaction}}/>
