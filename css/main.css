@@ -10,7 +10,7 @@ img {
     width: 20px;
 }
 
-.anger {
+.angery {
     content: url(../images/anger.svg);
 }
 
@@ -113,3 +113,42 @@ img {
     color: #07318f;
     font-weight: bold;
 }
+
+.meter {
+    position: absolute;
+    left: 0;
+    top: 660px;
+    width: 1280px;
+    height: 60px;
+    z-index: 1000;
+}
+
+.meter-left, .meter-right {
+    display: inline-block;
+    width: 0px; /* temp */
+    /* width: 50%; */
+    height: 100%;
+}
+
+.meter-left {
+    background-color: #F05469;
+}
+.meter-right {
+    background-color: white;
+    float: right;
+}
+.meter .love,
+.meter .like {
+    position: relative;
+    top: 5px;
+    height: 50px;
+    width: 50px;
+}
+.meter .love {
+    float: right;
+    right: 10px;
+}
+.meter .like {
+    left: 10px;
+}
+

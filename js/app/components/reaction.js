@@ -35,6 +35,14 @@ define(function(require) {
       });
       lastState = newState;
 
+      const love = newState['LOVE'];
+      const like = newState['LIKE'];
+      const tot = (love || 0) + (like || 0);
+
+      document.getElementById('meter-left').style.width = (love/tot) * 100 + '%';
+      document.getElementById('meter-right').style.width = (like/tot) * 100 + '%';
+
+      /*
       Object.keys(delta).forEach(reactionType => {
         console.log(reactionType + ' ' + delta[reactionType]);
         const html = template({
@@ -51,6 +59,7 @@ define(function(require) {
           containerElement.remove();
         }, 3000);
       });
+      */
     },
   };
 });
