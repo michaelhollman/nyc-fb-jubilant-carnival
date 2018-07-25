@@ -41,6 +41,8 @@ define(function(require) {
 
       document.getElementById('meter-left').style.width = (love/tot) * 100 + '%';
       document.getElementById('meter-right').style.width = (like/tot) * 100 + '%';
+      document.getElementById('love-count').innerText = love;
+      document.getElementById('like-count').innerText = like;
 
       /*
       Object.keys(delta).forEach(reactionType => {

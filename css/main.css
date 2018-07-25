@@ -64,6 +64,7 @@ img {
     color: black;
     background-color: rgba(255, 255, 255, .7);
     position: relative;
+    word-wrap: break-word;
 }
 
 
@@ -150,5 +151,21 @@ img {
 }
 .meter .like {
     left: 10px;
+}
+
+#love-count, #like-count {
+    position: relative;
+    top: 13px;
+    font-size: 30px;
+}
+#love-count {
+    left: 13px;
+    color: white;
+    float: left;
+}
+#like-count {
+    right: 13px;
+    color: #5D9FF5;
+    float: right;
 }
 
