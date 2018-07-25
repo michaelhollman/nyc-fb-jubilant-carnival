@@ -1,0 +1,23 @@
+{
+  "name": "nyc-fb-jubilant-carnival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelhollman/nyc-fb-jubilant-carnival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelhollman/nyc-fb-jubilant-carnival/issues"
+  },
+  "homepage": "https://github.com/michaelhollman/nyc-fb-jubilant-carnival#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "serve-static": "^1.13.2"
+  }
+}
