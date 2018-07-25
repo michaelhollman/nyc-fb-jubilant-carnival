@@ -10,12 +10,12 @@ define(function(require) {
   }
   
   function startReactionServerEvents() { 
-    var source = new EventSource("https://streaming-graph.facebook.com/" + liveVideoId + "/live_reactions?access_token=" + accessToken + "&comment_rate=one_per_two_seconds&fields=from{name,id,profile_pic},message");
+    var source = new EventSource("https://streaming-graph.facebook.com/" + liveVideoId + "/live_reactions?access_token=" + accessToken + "&fields=reaction_stream");
     source.onmessage = LoggingTheEvent; 
   }
   
   function startCommentServerEvents() { 
-    var source = new EventSource("https://streaming-graph.facebook.com/" + liveVideoId + "/live_comments?access_token=" + accessToken + "&comment_rate=one_per_two_seconds&fields=from{name,id},message");
+    var source = new EventSource("https://streaming-graph.facebook.com/" + liveVideoId + "/live_comments?access_token=" + accessToken + "&comment_rate=one_hundred_per_second&fields=from{name,id},message");
     source.onmessage = comment.add; 
   }
 
