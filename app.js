@@ -9,14 +9,12 @@ function getParameterByName(name, url) {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-  var liveVideoId = getParameterByName("vid"); 
-  document.getElementById("videoId").innerText = liveVideoId;
-  var accessToken = getParameterByName("at"); 
-  document.getElementById("accessToken").innerText = accessToken;
+  var liveVideoId = "1802474376526831"; 
 
   var source = new EventSource("https://streaming-graph.facebook.com/" + liveVideoId + "/live_comments?access_token=" + accessToken + "&comment_rate=one_per_two_seconds&fields=from{name,id},message");
   source.onmessage = function(event) {
     var statusEl = document.getElementById("statusElement"); 
-    statusEl.innerText = event[0].message; 
+    var data = JSON.parse(event.data);
+    statusEl.innerText = data.message; 
   };
 });
