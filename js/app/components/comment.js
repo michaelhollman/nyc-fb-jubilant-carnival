@@ -22,9 +22,9 @@ define(function(require) {
       document.getElementById("theAreaOfBusiness").appendChild(containerElement);
       console.log(dataFromEvent);
 
-      // setTimeout(function(){ 
-      //   containerElement.remove(); 
-      // }, 3000)
+      containerElement.firstElementChild().addEventListener("transitionend", function() { 
+        containerElement.remove(); 
+      })
     }
   }
 });
