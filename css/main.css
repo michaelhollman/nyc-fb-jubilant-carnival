@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+.anger {
+    content: url(../images/anger.svg);
+}
+
+.haha {
+    content: url(../images/haha.svg);
+}
+
+.like {
+    content: url(../images/like.svg);
+}
+
+.love {
+    content: url(../images/love.svg);
+}
+
+.sad {
+    content: url(../images/sad.svg);
+}
+
+.wow {
+    content: url(../images/wow.svg);
+}
+
+.logo-white {
+    content: url(../images/logo-white.svg);
+}
+
+.logo-blue {
+    content: url(../images/logo-blue.svg);
+}
+
+.right-floater {
+    right: 20px;
+    top: 100%;
+    opacity: 1;
+    position: absolute;
+    transition: top 2s ease-in-out, opacity 2s ease-out 3s;
+}
+
+.trigger-floater {
+    top: 20px;
+    opacity: 0;
+}
+
+
+.comment,
+.reaction-total {
+    width: 200px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgba(255, 255, 255, .7);
+    position: relative;
+}
+
+.comment {
+    float: right;
+}
+
+    .comment > img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        left: -20px;
+        top: 15px;
+    }
+
+    .comment > div > p,
+    .reaction-total > p {
+        margin: 0;
+        font-size: 0.9vw;
+        line-height: 0.9vw;
+        padding: 0 15px 15px 15px;
+    }
+
+        .comment > div > p:first-child {
+            padding: 15px 15px 0 15px;
+            color: #07318f;
+            font-weight: bold;
+        }
+
+.reaction-total > img:first-child {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    z-index: 1;
+}
+
+.reaction-total > img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 2;
+}
+
+.reaction-total > p {
+    padding: 15px;
+    color: #07318f;
+    font-weight: bold;
+}

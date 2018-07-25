@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 180 180" style="enable-background:new 0 0 180 180;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#face_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#262C38;}
+
+		.st2{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#262C38;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="start_2_">
+	<g id="XMLID_24_">
+		<linearGradient id="face_1_" gradientUnits="userSpaceOnUse" x1="90" y1="180" x2="90" y2="9.094947e-13">
+			<stop  offset="5.544483e-02" style="stop-color:#FFD972"/>
+			<stop  offset="0.1945" style="stop-color:#FECD71"/>
+			<stop  offset="0.4486" style="stop-color:#FBAC6F"/>
+			<stop  offset="0.7864" style="stop-color:#F6776B"/>
+			<stop  offset="1" style="stop-color:#F25268"/>
+		</linearGradient>
+		<circle id="face_3_" class="st0" cx="90" cy="90" r="90"/>
+	</g>
+	<path id="mouth_1_" class="st1" d="M90,137.7c15.5,0,28.1,1.6,28.1,6.5c0,5-12.6,4.8-28.1,4.8c-15.5,0-28.1,0.2-28.1-4.8
+		C61.9,139.3,74.5,137.7,90,137.7z"/>
+	<path id="eye_7_" class="st1" d="M50.6,105.3c6.2,0,11.2,5,11.2,11.2c0,6.2-5,11.2-11.2,11.2c-6.2,0-11.2-5-11.2-11.2
+		C39.4,110.4,44.4,105.3,50.6,105.3z"/>
+	<path id="eye_6_" class="st1" d="M129.4,105.3c6.2,0,11.2,5,11.2,11.2c0,6.2-5,11.2-11.2,11.2c-6.2,0-11.2-5-11.2-11.2
+		C118.1,110.4,123.2,105.3,129.4,105.3z"/>
+	<path id="brow_4_" class="st2" d="M25.3,99.6c0,0,13,10.4,50.6,11.2"/>
+	<path id="brow_3_" class="st2" d="M154.7,99.6c0,0-13,10.4-50.6,11.2"/>
+</g>
+</svg>
