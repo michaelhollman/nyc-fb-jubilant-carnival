@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif
 }
 
 img {
@@ -57,16 +58,14 @@ img {
 
 .comment,
 .reaction-total {
-    width: 200px;
+  font-size: 24px;
+  width: 200px;
     border-radius: 20px;
     color: black;
     background-color: rgba(255, 255, 255, .7);
     position: relative;
 }
 
-.comment {
-    float: right;
-}
 
     .comment > img {
         width: 40px;
@@ -80,8 +79,8 @@ img {
     .comment > div > p,
     .reaction-total > p {
         margin: 0;
-        font-size: 0.9vw;
-        line-height: 0.9vw;
+        font-size: 1.5vw;
+        line-height: 1.5vw;
         padding: 0 15px 15px 15px;
     }
 

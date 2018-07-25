@@ -1,9 +1,9 @@
 define(function(require) { 
   const quadrants = [
-    { top: 0, left: 0, bottom: 540, right: 960 },
-    { top: 0, left: 960, bottom: 540, right: 1920 },
-    { top: 540, left: 0, bottom: 1080, right: 960 },
-    { top: 540, left: 960, bottom: 1080, right: 1920 }
+    { top: 0, left: 0, bottom: 360, right: 640 },
+    { top: 0, left: 640, bottom: 360, right: 1280 },
+    { top: 360, left: 0, bottom: 720, right: 640 },
+    { top: 360, left: 640, bottom: 720, right: 1280 }
   ]; 
 
   function randomNumber(x, y) {

@@ -16,15 +16,26 @@ define(function(require) {
       });
       var containerElement = document.createElement("div"); 
       containerElement.innerHTML = html; 
-
-      elementRandomizer(containerElement);
+      containerElement.className = "right-floater";
+      //
 
       document.getElementById("theAreaOfBusiness").appendChild(containerElement);
       console.log(dataFromEvent);
 
-      containerElement.firstElementChild().addEventListener("transitionend", function() { 
-        containerElement.remove(); 
-      })
+      setTimeout(function() { 
+        elementRandomizer(containerElement);
+        containerElement.className += " trigger-floater";
+        containerElement.addEventListener("transitionend", function(ev) { 
+          if (ev.propertyName === "opacity") { 
+            containerElement.remove(); 
+          }
+        })
+        //ment.className = containerElement.className + " trigger-floater";
+      }, 300)
+
+      // containerElement.firstElementChild().addEventListener("transitionend", function() { 
+      //   containerElement.remove(); 
+      // })
     }
   }
 });
