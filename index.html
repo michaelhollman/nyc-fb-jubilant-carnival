@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="app.js"></script>
     <style>
       body {
         color: white;
@@ -9,8 +8,24 @@
     </style>
   </head>
   <body>
-      <h1 id="statusElement">Default Text</h1>
-      <p id="videoId">Default Video Id</p>
-      <p id="accessToken">Default Token</p>
-  </body>
+      <script id="reaction-template" type="text/x-handlebars-template">
+        <div class="comment">
+            <img src={{profile-picture}}/>
+            <div>
+                <p>{{name}}</p>
+                <p>{{comment}}</p>
+            </div>
+         </div>
+      </script>
+
+      <script id="comment-template" type="text/x-handlebars-template">
+        <div class="reaction-total">
+            <img {{primary-reaction}}/>
+            <img {{secondary-reaction}}/>
+            <p> {{reactors}}.</p> // i.e. Shannon Medcalf, Abbie Giffin, and 1.2k others.
+         </div>
+      </script>
+
+      <script data-main="js/app.js" src="js/lib/require.js"></script>
+    </body>
 </html>
