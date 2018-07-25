@@ -1,6 +1,7 @@
 define(function(require) { 
 
   const Handlebars = require("handlebars"); 
+  const elementRandomizer = require("app/utility/element-randomizer");
 
   var source   = document.getElementById("comment-template").innerHTML;
   var template = Handlebars.compile(source);
@@ -16,12 +17,14 @@ define(function(require) {
       var containerElement = document.createElement("div"); 
       containerElement.innerHTML = html; 
 
+      elementRandomizer(containerElement);
+
       document.getElementById("theAreaOfBusiness").appendChild(containerElement);
       console.log(dataFromEvent);
 
-      setTimeout(function(){ 
-        containerElement.remove(); 
-      }, 3000)
+      // setTimeout(function(){ 
+      //   containerElement.remove(); 
+      // }, 3000)
     }
   }
 });
